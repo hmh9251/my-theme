@@ -322,14 +322,25 @@
       "name": "String",
       "scope": "string",
       "settings": {
-        "foreground": "#C4621A"
+        "foreground": "#22863A"
       }
     },
     {
       "name": "String Quoted",
-      "scope": ["string.quoted", "variable.other.readwrite.js"],
+      "scope": "string.quoted",
       "settings": {
-        "foreground": "#C4621A"
+        "foreground": "#22863A"
+      }
+    },
+    {
+      "name": "Object Literal Keys",
+      "scope": [
+        "meta.object-literal.key",
+        "meta.object-literal.key.js",
+        "meta.object-literal.key.ts"
+      ],
+      "settings": {
+        "foreground": "#0B7CAD"
       }
     },
     {

@@ -6,7 +6,8 @@
 
 - **语法配色**:基于 Night Owl Light —— 关键字紫 `#994cc3`、函数蓝 `#4876d6`、数字品红 `#aa0982`、注释灰 `#989fb1`
 - **无斜体**(v0.6):全主题移除 `fontStyle: italic`,关键字 / 注释 / 函数等不再变细变斜
-- **字符串**:原版酒红 `#c96765` → v0.5 绿 `#22863A` → v0.7 暖琥珀 `#C4621A`,与对象键名、函数、关键字明显区分
+- **字符串**:绿 `#22863A`,与对象键名明显区分(v0.8)
+- **对象键名**:蓝灰 `#0B7CAD`(v0.8),不再与字符串混淆
 - **模板插值**:保持 `#4876d6` 蓝,与字符串主体区分
 - **经典两栏**:活动栏深灰 `#333333`、状态栏蓝 `#007ACC`
 - **标签页**:活动标签与编辑区融合 + 顶部蓝条,非活动标签压暗(v0.3+)
@@ -16,7 +17,7 @@
 ## 安装
 
 ```powershell
-code --install-extension dawn-owl-0.7.0.vsix --force
+code --install-extension dawn-owl-0.8.0.vsix --force
 ```
 
 安装后 `Ctrl+K Ctrl+T` 选择 **Dawn Owl Light**。
@@ -51,7 +52,7 @@ VSCode 只开放标签颜色,不开放圆角与每标签高度。要实现需向
 3. **以管理员身份**运行 VSCode → 命令面板 `Enable Custom CSS and JS` → 重启
 4. 若提示 "corrupted",点 **Don't show again**
 
-> 每次 VSCode 升级或改了 `custom.css`,需重新 `Reload Custom CSS and JS`(管理员)+ 重启。
+> 每次 VS Code 升级或改了 `custom.css`,需重新 `Reload Custom CSS and JS`(管理员)+ 重启。
 
 ## 调色板
 
@@ -60,7 +61,8 @@ VSCode 只开放标签颜色,不开放圆角与每标签高度。要实现需向
 | 编辑器背景 | `#FBFBFB` |
 | 正文 | `#403f53` |
 | 关键字 | `#994cc3` |
-| 字符串 | `#C4621A` |
+| 字符串 | `#22863A` |
+| 对象键名 | `#0B7CAD` |
 | 函数 | `#4876d6` |
 | 数字 / 常量 | `#aa0982` |
 | 注释 | `#989fb1` |
@@ -77,7 +79,8 @@ npx --yes @vscode/vsce@latest package --no-dependencies --allow-missing-reposito
 
 ## 版本
 
-- `0.7.0` 字符串色由绿 `#22863A` 改为暖琥珀 `#C4621A`,与对象键名/函数/关键字更好区分
+- `0.8.0` 字符串恢复为绿 `#22863A`;新增对象键名规则,使用蓝灰 `#0B7CAD`,与字符串区分
+- `0.7.0` 字符串色由绿 `#22863A` 改为琥珀 `#C4621A`
 - `0.6.0` 移除全主题斜体(`fontStyle: italic` → `""`),代码不再变细变斜;`bold` 保留
 - `0.5.0` 字符串色由酒红改为绿 `#22863A`(含模板 `${}` 插值)
 - `0.4.0` 新增彩虹括号 / Sticky Scroll / 活动缩进线 / 符号图标等 token

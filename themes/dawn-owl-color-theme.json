@@ -358,6 +358,23 @@
       }
     },
     {
+      "name": "JavaScript Object Literal Keys (constant.other.object.key)",
+      "scope": [
+        "constant.other.object.key.js string.unquoted.js",
+        "constant.other.object.key.ts string.unquoted.ts",
+        "constant.other.object.key.tsx string.unquoted.tsx",
+        "constant.other.object.key.js string.quoted.js",
+        "constant.other.object.key.ts string.quoted.ts",
+        "constant.other.object.key.tsx string.quoted.tsx",
+        "constant.other.object.key.js",
+        "constant.other.object.key.ts",
+        "constant.other.object.key.tsx"
+      ],
+      "settings": {
+        "foreground": "#0B7CAD"
+      }
+    },
+    {
       "name": "Support Constant Math",
       "scope": "support.constant.math",
       "settings": {

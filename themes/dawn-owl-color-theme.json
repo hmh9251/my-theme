@@ -344,6 +344,20 @@
       }
     },
     {
+      "name": "Object Literal Keys (unquoted identifiers)",
+      "scope": [
+        "meta.object-literal.key.js variable.other.readwrite.js",
+        "meta.object-literal.key.ts variable.other.readwrite.ts",
+        "meta.object-literal.key.tsx variable.other.readwrite.tsx",
+        "meta.object-literal.key.js variable.other.object.js",
+        "meta.object-literal.key.ts variable.other.object.ts",
+        "meta.object-literal.key.tsx variable.other.object.tsx"
+      ],
+      "settings": {
+        "foreground": "#0B7CAD"
+      }
+    },
+    {
       "name": "Support Constant Math",
       "scope": "support.constant.math",
       "settings": {

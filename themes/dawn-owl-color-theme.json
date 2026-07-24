@@ -322,14 +322,14 @@
       "name": "String",
       "scope": "string",
       "settings": {
-        "foreground": "#4876d6"
+        "foreground": "#22863A"
       }
     },
     {
       "name": "String Quoted",
       "scope": ["string.quoted", "variable.other.readwrite.js"],
       "settings": {
-        "foreground": "#c96765"
+        "foreground": "#22863A"
       }
     },
     {
@@ -908,7 +908,7 @@
       "name": "Punctuation Section Embedded",
       "scope": "punctuation.section.embedded",
       "settings": {
-        "foreground": "#d3423e"
+        "foreground": "#4876d6"
       }
     },
     {
@@ -940,7 +940,7 @@
       "name": "Template Strings",
       "scope": "string.template meta.template.expression",
       "settings": {
-        "foreground": "#d3423e"
+        "foreground": "#4876d6"
       }
     },
     {

@@ -322,14 +322,14 @@
       "name": "String",
       "scope": "string",
       "settings": {
-        "foreground": "#6F42C1"
+        "foreground": "#22863A"
       }
     },
     {
       "name": "String Quoted",
       "scope": "string.quoted",
       "settings": {
-        "foreground": "#6F42C1"
+        "foreground": "#22863A"
       }
     },
     {

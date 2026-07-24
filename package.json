@@ -1,0 +1,28 @@
+{
+  "name": "dawn-owl",
+  "displayName": "Dawn Owl Light",
+  "description": "Dawn Owl Light — a light theme based on Night Owl Light, with a classic dark-gray activity bar, blue status bar and rounded tab styling.",
+  "version": "0.4.0",
+  "publisher": "my-theme",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "light-theme",
+    "dawn-owl",
+    "syntax-theme"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Dawn Owl Light",
+        "uiTheme": "vs",
+        "path": "./themes/dawn-owl-color-theme.json"
+      }
+    ]
+  }
+}

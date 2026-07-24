@@ -1,0 +1,12 @@
+.vscode/**
+.gitignore
+.gitattributes
+.github/**
+**/*.map
+**/tsconfig.json
+**/.eslintrc*
+node_modules/**
+custom.css
+.backup-0.3.1/**
+.backup-*/**
+*.vsix

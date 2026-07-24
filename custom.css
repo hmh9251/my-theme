@@ -1,0 +1,38 @@
+/* ============================================================
+   Dawn Owl Light — rounded, differential-height tabs
+   ------------------------------------------------------------
+   VSCode 只开放标签的颜色,不开放圆角和"活动/非活动不同高度"。
+   圆角与高度差需向 workbench 注入 CSS,本文件配合扩展使用:
+
+   扩展: Custom CSS and JS Loader   (id: be5invis.vscode-custom-css)
+   settings.json:
+     "vscode_custom_css.imports": ["file:///E:/my-theme/custom.css"]
+   然后: 命令面板运行 "Enable Custom CSS and JS",重启 VSCode。
+   (Windows 首次启用可能需以管理员身份运行 VSCode 一次以打补丁。)
+   ============================================================ */
+
+:root {
+  --do-tab-active-h:   35px; /* 活动标签高度 = 标签栏高度 (standard=35, compact=28) */
+  --do-tab-inactive-h:  27px; /* 非活动标签更矮 */
+  --do-tab-hover-h:     31px; /* 非活动标签悬停回升到中间值 */
+  --do-tab-radius:       9px; /* 圆角半径 */
+}
+
+/* 所有标签顶部圆角,底部平直以便与编辑区无缝衔接 */
+.monaco-workbench .tabs-container .tab {
+  border-radius: var(--do-tab-radius) var(--do-tab-radius) 0 0 !important;
+  overflow: hidden;
+  transition: height .1s ease, margin-top .1s ease, background-color .12s ease;
+}
+
+/* 非活动(非固定)标签:变矮 + 下移,使其顶部低于活动标签 => 视觉上"在后面" */
+.monaco-workbench .tabs-container .tab:not(.active):not(.pinned) {
+  height: var(--do-tab-inactive-h) !important;
+  margin-top: calc(var(--do-tab-active-h) - var(--do-tab-inactive-h)) !important;
+}
+
+/* 非活动标签悬停:回升一半,提示可点击 */
+.monaco-workbench .tabs-container .tab:not(.active):not(.pinned):hover {
+  height: var(--do-tab-hover-h) !important;
+  margin-top: calc(var(--do-tab-active-h) - var(--do-tab-hover-h)) !important;
+}

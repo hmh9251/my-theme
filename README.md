@@ -4,7 +4,8 @@
 
 ## 特性
 
-- **语法配色**:照搬 Night Owl Light —— 关键字紫 `#994cc3`、函数蓝 `#4876d6`、数字品红 `#aa0982`、注释灰斜体 `#989fb1`
+- **语法配色**:基于 Night Owl Light —— 关键字紫 `#994cc3`、函数蓝 `#4876d6`、数字品红 `#aa0982`、注释灰 `#989fb1`
+- **无斜体**(v0.6):全主题移除 `fontStyle: italic`,关键字 / 注释 / 函数等不再变细变斜
 - **字符串**:由原版酒红 `#c96765` 改为舒适高对比的绿 `#22863A`(v0.5)
 - **经典两栏**:活动栏深灰 `#333333`、状态栏蓝 `#007ACC`
 - **标签页**:活动标签与编辑区融合 + 顶部蓝条,非活动标签压暗(v0.3+)
@@ -14,7 +15,7 @@
 ## 安装
 
 ```powershell
-code --install-extension dawn-owl-0.5.0.vsix --force
+code --install-extension dawn-owl-0.6.0.vsix --force
 ```
 
 安装后 `Ctrl+K Ctrl+T` 选择 **Dawn Owl Light**。
@@ -75,6 +76,7 @@ npx --yes @vscode/vsce@latest package --no-dependencies --allow-missing-reposito
 
 ## 版本
 
+- `0.6.0` 移除全主题斜体(`fontStyle: italic` → `""`),代码不再变细变斜;`bold` 保留
 - `0.5.0` 字符串色由酒红改为绿 `#22863A`(含模板 `${}` 插值)
 - `0.4.0` 新增彩虹括号 / Sticky Scroll / 活动缩进线 / 符号图标等 token
 - `0.3.x` 标签页配色增强(活动融合 + 蓝条 + 非活动压暗)

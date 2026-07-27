@@ -3,8 +3,13 @@
   "displayName": "Dawn Owl Light",
   "description": "Dawn Owl Light — a light theme based on Night Owl Light, with a classic dark-gray activity bar, blue status bar and rounded tab styling.",
   "version": "1.0.0",
-  "publisher": "my-theme",
+  "publisher": "kexi-hmh9925991",
   "license": "MIT",
+  "scripts": {
+    "package": "npx --yes @vscode/vsce@latest package --no-dependencies --allow-missing-repository",
+    "publish": "npx --yes @vscode/vsce@latest publish --no-dependencies --allow-missing-repository",
+    "publish:login": "npx --yes @vscode/vsce@latest login"
+  },
   "engines": {
     "vscode": "^1.60.0"
   },

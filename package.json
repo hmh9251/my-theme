@@ -2,7 +2,7 @@
   "name": "dawn-owl",
   "displayName": "Dawn Owl Light",
   "description": "Dawn Owl Light — a light theme based on Night Owl Light, with a classic dark-gray activity bar, blue status bar and rounded tab styling.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "kexi-hmh9925991",
   "license": "MIT",
   "scripts": {

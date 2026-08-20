@@ -67,6 +67,11 @@
     "activityBarBadge.background": "#007ACC",
     "activityBarBadge.foreground": "#FFFFFF",
     "activityBar.border": "#2D2D2D",
+    // Activity Bar — Modern UI (newer VS Code versions)
+    "modernActivityBar.activeBackground": "#00000000",
+    "modernActivityBar.activeForeground": "#FFFFFF",
+    "modernActivityBar.hoverBackground": "#00000000",
+    "modernActivityBar.hoverForeground": "#FFFFFF",
     // Side Bar
     "sideBar.background": "#F0F0F0",
     "sideBar.foreground": "#403f53",
